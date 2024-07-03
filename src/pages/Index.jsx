@@ -1,10 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+    <div className="flex flex-col items-center justify-center space-y-4">
+      <Card className="w-full max-w-md">
+        <CardHeader>
+          <CardTitle>Welcome to Sneaker Accounting</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>
+            Track your sneaker transactions effortlessly. Add, view, edit, and
+            delete your sneaker purchases with ease.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 };
